@@ -1,0 +1,345 @@
+.home-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #050505 0%, #1a1a1a 50%, #050505 100%);
+  color: white;
+  padding: 3rem 2rem;
+}
+
+.home-container h1 {
+  text-align: center;
+  color: #fffd59;
+  margin-bottom: 1rem;
+  font-size: 3rem;
+  font-weight: bold;
+  text-shadow: 0 0 20px rgba(255, 253, 89, 0.5);
+  letter-spacing: -2px;
+}
+
+.home-container > p {
+  text-align: center;
+  color: #cccccc;
+  font-size: 1.3rem;
+  margin-bottom: 4rem;
+  font-weight: 300;
+}
+
+.featured-products {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.featured-products h2 {
+  text-align: center;
+  color: #fffd59;
+  margin-bottom: 3rem;
+  font-size: 2.5rem;
+  font-weight: 600;
+  position: relative;
+}
+
+.featured-products h2::after {
+  content: '';
+  display: block;
+  width: 100px;
+  height: 3px;
+  background: linear-gradient(90deg, transparent, #fffd59, transparent);
+  margin: 1rem auto;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.product-card {
+  background: linear-gradient(145deg, #1a1a1a, #0a0a0a);
+  border: 2px solid rgba(255, 253, 89, 0.2);
+  border-radius: 15px;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.product-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 253, 89, 0.1), transparent);
+  transition: left 0.5s ease;
+}
+
+.product-card:hover::before {
+  left: 100%;
+}
+
+.product-card:hover {
+  transform: translateY(-10px);
+  border-color: #fffd59;
+  box-shadow: 0 20px 40px rgba(255, 253, 89, 0.2);
+}
+
+.product-card h3 {
+  color: #fffd59;
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.product-card p {
+  color: #fffd59;
+  font-weight: bold;
+  font-size: 1.8rem;
+  text-shadow: 0 0 10px rgba(255, 253, 89, 0.3);
+  margin-bottom: 1.5rem;
+}
+
+.product-card .product-description {
+  color: #cccccc;
+  font-size: 1rem;
+  font-weight: normal;
+  margin-bottom: 1.5rem;
+  line-height: 1.5;
+}
+
+.product-card .btn-ver-mas {
+  background: linear-gradient(45deg, #fffd59, #f0ed00);
+  color: #050505;
+  border: none;
+  padding: 0.75rem 2rem;
+  border-radius: 25px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.product-card .btn-ver-mas:hover {
+  transform: scale(1.05);
+  box-shadow: 0 5px 20px rgba(255, 253, 89, 0.4);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .home-container {
+    padding: 2rem 1rem;
+  }
+  
+  .home-container h1 {
+    font-size: 2rem;
+  }
+  
+  .featured-products h2 {
+    font-size: 1.8rem;
+  }
+  
+  .product-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .product-card {
+    padding: 1.5rem;
+  }
+}
+
+.titulo-izquierda {
+  text-align: left;
+  margin-left: 0;
+  padding-left: 1rem; /* opcional: separa un poco del borde */
+  color: #fffd59;
+  font-size: 3rem;
+  font-weight: bold;
+  text-shadow: 0 0 20px rgba(255, 253, 89, 0.5);
+  letter-spacing: -2px;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in-up {
+  animation: fadeInUp 1s ease-out forwards;
+  opacity: 0;
+}
+
+/* Estilos para la sección del banner */
+.banner-section {
+  width: 100%;
+  margin-bottom: 4rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.banner-image {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 15px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.6);
+  transition: transform 0.3s ease;
+}
+
+.banner-image:hover {
+  transform: scale(1.02);
+}
+
+/* Banner personalizado con gradiente */
+.banner-custom {
+  width: 100%;
+  height: 400px;
+  background: linear-gradient(135deg, #fffd59 0%, #f0ed00 50%, #fffd59 100%);
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 15px 40px rgba(255, 253, 89, 0.3);
+}
+
+.banner-custom::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transition: left 0.8s ease;
+}
+
+.banner-custom:hover::before {
+  left: 100%;
+}
+
+.banner-content {
+  text-align: center;
+  color: #050505;
+  z-index: 2;
+  position: relative;
+}
+
+.banner-content h2 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.banner-content p {
+  font-size: 1.3rem;
+  font-weight: 300;
+  margin-bottom: 2rem;
+}
+
+.banner-content .btn-banner {
+  background: linear-gradient(45deg, #050505, #1a1a1a);
+  color: #fffd59;
+  border: 2px solid #fffd59;
+  padding: 1rem 2.5rem;
+  border-radius: 25px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.banner-content .btn-banner:hover {
+  background: #fffd59;
+  color: #050505;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(255, 253, 89, 0.4);
+}
+
+/* Banner minimalista */
+.banner-minimal {
+  width: 100%;
+  height: 200px;
+  background: linear-gradient(145deg, #1a1a1a, #0a0a0a);
+  border: 2px solid rgba(255, 253, 89, 0.3);
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  position: relative;
+  overflow: hidden;
+}
+
+.banner-minimal::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(45deg, transparent 45%, rgba(255, 253, 89, 0.1) 50%, transparent 55%);
+  transform: translateX(-100%);
+  transition: transform 0.6s ease;
+}
+
+.banner-minimal:hover::after {
+  transform: translateX(100%);
+}
+
+.banner-minimal .banner-text {
+  color: #fffd59;
+  font-size: 2rem;
+  font-weight: 600;
+  text-shadow: 0 0 15px rgba(255, 253, 89, 0.5);
+  z-index: 2;
+  position: relative;
+}
+
+/* Responsive para banner */
+@media (max-width: 768px) {
+  .banner-section {
+    margin-bottom: 3rem;
+  }
+  
+  .banner-image,
+  .banner-custom {
+    height: 250px;
+  }
+  
+  .banner-content h2 {
+    font-size: 2rem;
+  }
+  
+  .banner-content p {
+    font-size: 1.1rem;
+  }
+  
+  .banner-minimal {
+    height: 150px;
+  }
+  
+  .banner-minimal .banner-text {
+    font-size: 1.5rem;
+  }
+}
+
+/* Animación para el banner */
+.banner-fade-in {
+  animation: fadeInUp 1.2s ease-out forwards;
+  opacity: 0;
+}

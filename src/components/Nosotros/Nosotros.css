@@ -1,0 +1,167 @@
+/* Nosotros.css */
+.nosotros-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+  color: #e0e0e0;
+  background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
+  min-height: 100vh;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.nosotros-header {
+  text-align: center;
+  margin-bottom: 4rem;
+  padding-bottom: 2rem;
+  border-bottom: 2px solid #fffd59;
+}
+
+.nosotros-title {
+  font-size: 3.2rem;
+  color: #fffd59;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  letter-spacing: -1px;
+  text-shadow: 0 2px 8px rgba(255, 253, 89, 0.3);
+}
+
+.nosotros-subtitle {
+  font-size: 1.4rem;
+  color: #e0e0e0;
+  font-style: italic;
+  font-weight: 500;
+}
+
+.nosotros-content {
+  margin-bottom: 4rem;
+}
+
+.nosotros-content p {
+  font-size: 1.15rem;
+  line-height: 1.8;
+  margin-bottom: 1.8rem;
+  color: #e0e0e0;
+  font-weight: 500;
+}
+
+.nosotros-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.nosotros-card {
+  background: rgba(255, 253, 89, 0.05);
+  border: 1px solid rgba(255, 253, 89, 0.2);
+  padding: 2rem;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.nosotros-card:hover {
+  transform: translateY(-2px);
+  border-color: #fffd59;
+  background: rgba(255, 253, 89, 0.1);
+  box-shadow: 0 8px 25px rgba(255, 253, 89, 0.15);
+}
+
+.nosotros-card-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.nosotros-icon {
+  width: 24px;
+  height: 24px;
+  color: #fffd59;
+  margin-right: 12px;
+  filter: drop-shadow(0 2px 4px rgba(255, 253, 89, 0.3));
+}
+
+.nosotros-card h3 {
+  color: #fffd59;
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin: 0;
+  letter-spacing: 0.5px;
+}
+
+.nosotros-card p {
+  color: #e0e0e0;
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.6;
+  font-weight: 500;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .nosotros-container {
+    padding: 2rem 1rem;
+  }
+  
+  .nosotros-header {
+    margin-bottom: 3rem;
+    padding-bottom: 1.5rem;
+  }
+  
+  .nosotros-title {
+    font-size: 2.5rem;
+  }
+  
+  .nosotros-subtitle {
+    font-size: 1.2rem;
+  }
+  
+  .nosotros-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .nosotros-content {
+    margin-bottom: 3rem;
+  }
+  
+  .nosotros-content p {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .nosotros-card {
+    padding: 1.5rem;
+  }
+  
+  .nosotros-card h3 {
+    font-size: 1.2rem;
+  }
+  
+  .nosotros-icon {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .nosotros-container {
+    padding: 1.5rem 1rem;
+  }
+  
+  .nosotros-title {
+    font-size: 2rem;
+  }
+  
+  .nosotros-subtitle {
+    font-size: 1rem;
+  }
+  
+  .nosotros-card {
+    padding: 1.25rem;
+  }
+  
+  .nosotros-content p {
+    font-size: 0.95rem;
+    line-height: 1.7;
+  }
+}

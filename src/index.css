@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #050505;
+  color: white;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/*Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #050505;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #fffd59;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #f0ed00;
+}
+
+/* Estilos para inputs y formularios */
+input, textarea, select {
+  background-color: #1a1a1a;
+  border: 2px solid rgba(255, 253, 89, 0.3);
+  color: white;
+  padding: 0.75rem;
+  border-radius: 8px;
+  font-family: inherit;
+  transition: border-color 0.3s ease;
+}
+
+input:focus, textarea:focus, select:focus {
+  outline: none;
+  border-color: #fffd59;
+  box-shadow: 0 0 10px rgba(255, 253, 89, 0.2);
+}
+
+/* Botones  */
+.btn-primary {
+  background: linear-gradient(45deg, #fffd59, #f0ed00);
+  color: #050505;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 25px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(255, 253, 89, 0.4);
+}
+
+.btn-secondary {
+  background: transparent;
+  color: #fffd59;
+  border: 2px solid #fffd59;
+  padding: 0.75rem 1.5rem;
+  border-radius: 25px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.btn-secondary:hover {
+  background: #fffd59;
+  color: #050505;
+  transform: translateY(-2px);
+}
+
+/* Animaciones */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in-up {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+/* Utilidades */
+.text-center {
+  text-align: center;
+}
+
+.text-yellow {
+  color: #fffd59;
+}
+
+.bg-dark {
+  background-color: #050505;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
