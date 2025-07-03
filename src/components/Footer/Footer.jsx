@@ -7,10 +7,10 @@ const Footer = () => {
     <footer className="footer">
       <div className="footer-container">
         
-        {/* Sección principal del footer */}
+      
         <div className="footer-content">
           
-          {/* Logo y descripción */}
+        
           <div className="footer-section footer-brand">
             <h3 className="footer-logo">Distorsion Music Shop</h3>
             <p className="footer-description">

@@ -57,15 +57,12 @@ export const AuthProvider = ({ children }) => {
       return { success: false, message: 'El email ya está registrado.' };
     }
 
-    // En un proyecto real, aquí se añadiría el usuario a la base de datos.
-    // Para esta consigna, simplemente simulamos el éxito.
-    // Opcional: Podrías añadirlo a una copia en memoria de hardcodedUsers si quieres simularlo un poco más,
-    // pero no persistirá al recargar la página.
+    
     console.log(`Simulando registro de nuevo usuario: ${name} (${email})`);
     return { success: true, message: 'Registro exitoso. Ya puedes iniciar sesión.' };
   };
 
-  // El valor que se proveerá a los componentes que consuman este contexto
+  
   const value = {
     user,
     isAuthenticated,

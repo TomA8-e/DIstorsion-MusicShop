@@ -5,7 +5,7 @@ import FeaturedCarousel from '../Featured/FeaturedCarousel';
 const Home = () => {
   return (
     <div className="home-container">
-      {/* Banner Section */}
+      
       <div className="banner-section banner-fade-in">
         <img 
           src="/images/bannerguitarras.jpg" 

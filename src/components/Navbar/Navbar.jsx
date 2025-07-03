@@ -3,11 +3,11 @@ import { Link, useNavigate } from 'react-router-dom';
 import './Navbar.css';
 import logo from '../../assets/logoapp.png';
 import { useAuth } from '../../context/AuthContext';
-import { useCart } from '../../context/CartContext'; // ✅ NUEVO
+import { useCart } from '../../context/CartContext'; 
 
 const Navbar = () => {
   const { user, logout } = useAuth();
-  const { cartCount } = useCart(); // ✅ contador real del carrito
+  const { cartCount } = useCart(); //  contador carrito
   const [showProductsDropdown, setShowProductsDropdown] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 

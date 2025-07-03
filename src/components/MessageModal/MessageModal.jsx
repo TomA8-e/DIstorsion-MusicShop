@@ -1,10 +1,10 @@
 import React from 'react';
-import './MessageModal.css'; // Estilos para el modal
+import './MessageModal.css'; 
 
 const MessageModal = ({ message, type, onClose }) => {
-  if (!message) return null; // No renderiza si no hay mensaje
+  if (!message) return null; 
 
-  // Determina la clase CSS basada en el tipo de mensaje (success, error, info)
+  
   const modalClass = `message-modal ${type || 'info'}`;
 
   return (
