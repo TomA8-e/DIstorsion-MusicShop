@@ -1,0 +1,47 @@
+.message-modal-overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.message-modal {
+  background-color: #1a1a1a;
+  border-radius: 12px;
+  padding: 2rem;
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+  color: white;
+  box-shadow: 0 0 30px rgba(255, 253, 89, 0.2);
+  border: 1px solid rgba(255, 253, 89, 0.3);
+}
+
+.message-modal.success {
+  border-color: #22c55e;
+  color: #22c55e;
+}
+
+.message-modal.error {
+  border-color: #dc2626;
+  color: #dc2626;
+}
+
+.message-modal-close-btn {
+  margin-top: 1rem;
+  padding: 0.5rem 1.2rem;
+  background-color: rgba(255, 253, 89, 0.1);
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  color: inherit;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.message-modal-close-btn:hover {
+  background-color: rgba(255, 253, 89, 0.2);
+}
